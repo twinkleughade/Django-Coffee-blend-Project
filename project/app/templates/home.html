@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Home page {% endblock %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+{% endblock %}
+{% block content %}
+
+
+<section id="hero1">
+    <div id="heroDiv">
+
+    </div>
+    <div id="hero-text">
+        <h1>Welcome to Coffee Blend</h1>
+        <p>Freshly brewed moments in every cup.</p>
+        <a href="{% url 'order_online' %}" id="btn">Order Now</a>
+    </div>
+</section>
+
+<section class="specials">
+    <h2>Our Specials</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="{% static 'images/espresso.webp' %}" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>Bold, rich and smooth. A coffee lover’s dream.</p>
+        </div>
+        <div class="card">
+            <img src="{% static 'images/Cappuccino.jpg' %}" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Creamy foam topped with cinnamon magic.</p>
+        </div>
+        <div class="card">
+            <img src="{% static 'images/iced latte.jpeg' %}" alt="Iced Latte">
+            <h3>Iced Latte</h3>
+            <p>Chilled delight to keep you cool and energized.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

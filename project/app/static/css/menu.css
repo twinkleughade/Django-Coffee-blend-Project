@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcf8f5;
+    color: #3e2c27;
+  }
+  
+  .menu-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    color: #6d4c41;
+  }
+  
+  .menu-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .menu-section h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #d7ccc8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #5d4037;
+  }
+  
+  .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .menu-item {
+    flex: 1 1 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #4e342e;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #6d4c41;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 900px) {
+    .menu-item {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    .menu-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .menu-item {
+      flex: 1 1 100%;
+    }
+  
+    .menu-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .price {
+      font-size: 1rem;
+    }
+  }
+  

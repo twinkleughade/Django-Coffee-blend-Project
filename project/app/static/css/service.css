@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefaf6;
+    color: #3e2c27;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7b5e57;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .service-card {
+    flex: 1 1 30%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h2 {
+    font-size: 1.4rem;
+    color: #4e342e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5f4339;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .service-card {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    .service-card {
+      flex: 1 1 100%;
+      padding: 1rem;
+    }
+  
+    .service-card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .service-card p {
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}About page {% endblock %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/menu.css' %}">
+{% endblock %}
+{% block content %}
+
+
+  <div class="menu-container">
+    <header>
+      <h1>Our Coffee Menu</h1>
+      <p class="subheading">Freshly brewed with love, served just the way you like it.</p>
+    </header>
+
+    <section class="menu-section">
+      <h2>Espresso</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Single Espresso</h3>
+          <p class="price">Rs.170</p>
+        </div>
+        <div class="menu-item">
+          <h3>Double Espresso</h3>
+          <p class="price">Rs.255</p>
+        </div>
+        <div class="menu-item">
+          <h3>Americano</h3>
+          <p class="price">Rs.300</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Lattes & Cappuccinos</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Latte</h3>
+          <p class="price">Rs.340</p>
+        </div>
+        <div class="menu-item">
+          <h3>Vanilla Latte</h3>
+          <p class="price">Rs.500</p>
+        </div>
+        <div class="menu-item">
+          <h3>Cappuccino</h3>
+          <p class="price">Rs.400</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Cold Brews</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Classic Cold Brew</h3>
+          <p class="price">rs.450</p>
+        </div>
+        <div class="menu-item">
+          <h3>Vanilla Cream Cold Brew</h3>
+          <p class="price">Rs.500</p>
+        </div>
+        <div class="menu-item">
+          <h3>Mocha Cold Brew</h3>
+          <p class="price">Rs.550</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Specialty Drinks</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Chai Latte</h3>
+          <p class="price">Rs.450</p>
+        </div>
+        <div class="menu-item">
+          <h3>Matcha Latte</h3>
+          <p class="price">Rs.475</p>
+        </div>
+        <div class="menu-item">
+          <h3>Hot Chocolate</h3>
+          <p class="price">Rs.375</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock %}

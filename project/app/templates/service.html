@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}About page {% endblock %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/service.css' %}">
+{% endblock %}
+{% block content %}
+  <div class="services-container">
+    <header>
+      <h1>Our Services</h1>
+      <p class="subtitle">From your morning cup to full event catering — we’ve got you covered.</p>
+    </header>
+
+    <section class="services-grid">
+      <div class="service-card">
+        <img src="{% static 'images/divein.jpeg' %}" alt="Dine-in Service">
+        <h2>Dine-In</h2>
+        <p>Relax in our cozy café with your favorite brew, free Wi-Fi, and a welcoming atmosphere.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="{% static 'images/takeaway.jpg' %}" alt="Takeaway Coffee">
+        <h2>Takeaway</h2>
+        <p>In a rush? Grab your favorite drinks and pastries to go with fast, friendly service.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="{% static 'images/cattering.jpg' %}" alt="Coffee Catering">
+        <h2>Event Catering</h2>
+        <p>We bring the coffee to you! Perfect for weddings, meetings, and special events.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="{% static 'images/subscription.webp' %}" alt="Coffee Subscription">
+        <h2>Subscriptions</h2>
+        <p>Never run out of coffee again. Get fresh beans delivered weekly or monthly to your door.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="{% static 'images/workshop.webp' %}" alt="Coffee Workshop">
+        <h2>Workshops</h2>
+        <p>Join our barista classes and tasting events to dive deeper into the world of coffee.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="{% static 'images/custom.png' %}" alt="Custom Orders">
+        <h2>Custom Orders</h2>
+        <p>Need something unique? We offer personalized blends and branded coffee for businesses.</p>
+      </div>
+    </section>
+  </div>
+  {% endblock %}

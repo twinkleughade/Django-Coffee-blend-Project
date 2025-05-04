@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}About page {% endblock %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block content %}
+
+  <div class="about-container">
+    <h1>About Coffee Blend</h1>
+    <p class="intro">
+      Your daily escape into the world of rich, daily coffee.
+    </p>
+    <div class="content">
+      <img src="{% static 'images/coffee about.webp' %}" alt="Cozy coffee shop interior" />
+      <div class="text">
+        <h2>Our Story</h2>
+        <p>
+          Cofee Blend began in 2015 as a passion project of two coffee fanatics who wanted to bring ethically sourced, expertly  coffee to the heart of the city.
+        </p>
+        <p>
+          Whether you're here to work, catch up with friends, or simply enjoy your favorite cup, our doors are always open for good vibes and great brews.
+        </p>
+        <p>
+          We work closely with local farmers and roasters to ensure every sip supports sustainability and community.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        To craft more than just coffee — we craft experiences. We strive to offer an inviting space where quality meets comfort, and everyone feels welcome.
+      </p>
+  </div>
+
+  <div class="values">
+      <h2>What We Value</h2>
+      <ul>
+        <li><strong>Quality:</strong> We use only freshly roasted, ethically sourced beans.</li>
+        <li><strong>Community:</strong> Supporting local artists, farmers, and makers is our jam.</li>
+        <li><strong>Sustainability:</strong> From compostable cups to zero-waste goals, we care about the planet.</li>
+        <li><strong>Hospitality:</strong> Friendly faces, warm smiles, and a welcoming atmosphere — always.</li>
+      </ul>
+    </div>
+
+    <div class="team">
+      <h2>Meet the Team</h2>
+      <p>
+        Behind the counter, you’ll find passionate baristas, talented bakers, and friendly folks who love what they do. Our team brings personality and heart into every drink they serve.
+      </p>
+    </div>
+
+    <div class="cta">
+      <h2>Come Say Hello!</h2>
+      <p>
+        Whether you’re here for a latte, a laptop session, or just a moment of calm — we’re saving a seat for you.
+      </p>
+    </div>
+  </div>
+
+
+
+{% endblock %}

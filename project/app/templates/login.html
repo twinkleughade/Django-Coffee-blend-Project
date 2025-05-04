@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}login page {% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% comment %} <a href="{% url 'index' %}">Back</a> {% endcomment %}
+<div id="regDiv">
+ <div class="form-wrapper">
+    <form action="{% url 'logindata' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+      <h2>Login Form</h2>
+
+     <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" value="">
+    <br/>
+
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  </div>
+
+{% endblock %}

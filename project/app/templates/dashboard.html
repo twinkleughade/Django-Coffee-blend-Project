@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Dashboard page {% endblock %}
+{% load static %}
+{% block css %}
+
+{% endblock %}
+
+
+{% block content %}
+ <h1>Welcomee to dashboard</h1>
+ <hr/>
+ {% comment %} <hr/> {% endcomment %}
+ <div class="dashboard">
+ <h4>Name : {{userdata.name}} </h4> <br/>
+ <h4>Contact : {{userdata.contact}} </h4> <br/>
+ <h4>Dob : {{userdata.dob}} </h4> <br/>
+ <h4>Email : {{userdata.email}} </h4> <br/>
+ <h4>Gender : {{userdata.gender}} </h4> <br/>
+ </div>
+
+ 
+
+{% endblock %}

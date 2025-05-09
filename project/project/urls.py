@@ -31,6 +31,12 @@ urlpatterns = [
     path('login/',views.login,name='login'),
     path('order_online/',views.order_online,name='order_online'),
     path('logindata/',views.logindata,name='logindata'),
+    path('dashboard/',views.dashboard, name='dashboard'),
+    path('first/',views.first,name='first'),
+    path('asc/',views.asc,name='asc'),
+    path('last_5/',views.last_5,name='last_5'),
+    path('desc/',views.desc,name='desc'),
+    path('all/',views.all,name='all')
 
     
 ]

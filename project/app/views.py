@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import student
+from .models import student,Items
+
 
 # Create your views here.
 def base(request):
@@ -98,6 +99,40 @@ def logindata(request):
             return render(request,'login.html')
     else:
         return render(request,'login.html')
+    
+# def dashboard_view(request):
+#     table_data = [
+#         {'id': 1, 'name': 'John Doe', 'email': 'john@example.com'},
+#         {'id': 2, 'name': 'Jane Smith', 'email': 'jane@example.com'},
+#     ]
+#     return render(request, 'dashboard/dashboard.html', {'table_data': table_data})
+
+
+
+
+def dashboard(request):
+    return render(request,'dashboard.html')
+
+def first(request):
+    data=Items.objects.all()[0:5]
+    return render(request,'dashboard.html',{'data':data})
+
+def asc(request):
+    data=Items.objects.order_by('name')
+    return render(request,'dashboard.html',{'data':data})
+
+def last_5(request):
+    data=Items.objects.order_by('-name')[0:5]
+    return render(request,'dashboard.html',{'data':data})
+
+def desc(request):
+    data=Items.objects.order_by('-name')
+    return render(request,'dashboard.html',{'data':data})
+
+def all(request):
+    data=Items.objects.all()
+    return render(request,'dashboard.html',{'data':data})
+
 
 
 
